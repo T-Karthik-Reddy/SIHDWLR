@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+/* - - - - - Navigation Bar - - - - -*/
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 69px;
+  padding: 0px 40px;
+  background-color: rgb(7, 59, 91);
+}
+.left{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.left img {
+  height: 60px;
+  width: 60px;
+}
+.right a {
+  color: rgb(250, 248, 248);
+  text-decoration: none;
+  padding-right: 30px;
+}
+/* - - - - - - Hero Section - - - - - - */
+.hero {
+  position: relative;
+  height: calc(100vh - 69px); /* Full height minus 69px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.hero-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text h1 {
+  color: rgb(249, 249, 249);
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+/* - - - - - - Map - - - - - - */
+
+
+.search-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+#stateInput {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#searchButton {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+
+#map {
+  height: calc(100vh - 69px); /* Full height minus 69px */
+  width: 100%;
+}
+
+.map-container {
+    position: relative;
+    height: calc(100vh - 69px); /* Full height minus 69px */
+  width: 100%;
+}
+
+#searchBar {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    padding: 10px;
+    width: 200px; /* Adjust as needed */
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    z-index: 1000; /* Ensure it appears on top */
+    background: white; /* Optional: add a background to improve visibility */
+}
+
+
+/* - - - - - - Home Features - - - - - */
+.Features {
+    height: calc(100vh - 69px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(21, 121, 121);
+}
+
+.features-title {
+    font-size: 2rem;
+    margin-bottom: 20px; /* Space between title and cards */
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Equal gap between the cards */
+}
+.card img{
+    padding-top: 10px;
+}
+.card p span{
+    font-weight: bolder;
+}
+#about, #contact {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#contact a {
+    background-color: #964734; /* Dark red */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    text-decoration: none;
+}
+/* Footer */
+footer {
+    background-color: #003135; /* Dark teal */
+    color: #AFDDE5; /* Light color for text */
+    text-align: center;
+    padding: 10px 0;
+}
+.accordion-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0FA4AF;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.accordion-header {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    background-color: #fff;
+}
+/* - - - - - -Contact us - - - - - */
+
+#about, #contact {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#contact a {
+    background-color: #964734; /* Dark red */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #003135; /* Dark teal */
+    color: #AFDDE5; /* Light color for text */
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+/* Scroll to Top Button */
+#scrollTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* 20px from the bottom */
+    right: 30px; /* 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none;
+    outline: none;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text */
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+#scrollTopBtn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
